@@ -1,0 +1,40 @@
+research_recipe_task:
+  description: >
+    Conduct comprehensive research on {cuisine} cuisine, focusing on traditional and modern recipe styles.
+    Analyze the given ingredients {ingredients} and identify potential recipe directions.
+  expected_output: >
+    A detailed research report outlining:
+    - 3 potential recipe concepts
+    - Culinary techniques specific to {cuisine}
+    - Flavor profiles and ingredient compatibility
+    - Cultural context and recipe inspiration
+  agent: culinary_researcher
+
+create_recipe_task:
+  description: >
+    Develop three unique recipes based on the research findings.
+    Ensure each recipe:
+    - Uses the specified ingredients
+    - Represents authentic {cuisine} cooking styles
+    - Is original and creative
+  expected_output: >
+    Three complete recipe drafts, each including:
+    - Recipe name
+    - Ingredient list with precise measurements
+    - Step-by-step cooking instructions
+    - Estimated cooking and preparation time
+    - Serving suggestions
+  agent: recipe_creator
+
+refine_recipe_task:
+  description: >
+    Review and refine the generated recipes.
+    Enhance presentation, verify accuracy, and add professional culinary insights.
+  expected_output: >
+    Final, polished recipe document with:
+    - Professionally formatted recipes
+    - Additional chef's tips and variations
+    - Nutritional insights
+    - Potential ingredient substitutions
+    - Plating and presentation recommendations
+  agent: recipe_refiner

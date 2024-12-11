@@ -1,7 +1,7 @@
 [project]
-name = "my_recipe"
+name = "recipe_generator"
 version = "0.1.0"
-description = "my_recipe using crewAI"
+description = "Recipe Generation using CrewAI Multi-Agent System"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<=3.13"
 dependencies = [
@@ -9,11 +9,11 @@ dependencies = [
 ]
 
 [project.scripts]
-my_recipe = "my_recipe.main:run"
-run_crew = "my_recipe.main:run"
-train = "my_recipe.main:train"
-replay = "my_recipe.main:replay"
-test = "my_recipe.main:test"
+recipe_generator = "recipe_generator.main:run"
+run_crew = "recipe_generator.main:run"
+train = "recipe_generator.main:train"
+replay = "recipe_generator.main:replay"
+test = "recipe_generator.main:test"
 
 [build-system]
 requires = ["hatchling"]

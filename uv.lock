@@ -2207,17 +2207,6 @@ wheels = [
 ]
 
 [[package]]
-name = "my-recipe"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "crewai", extra = ["tools"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.86.0,<1.0.0" }]
-
-[[package]]
 name = "mypy-extensions"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3452,6 +3441,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/15/5e/ec560881e086f8939
 wheels = [
     { url = "https://files.pythonhosted.org/packages/68/c0/eef4fe9dad6d41333f7dc6567fa8144ffc1837c8a0edfc2317d50715335f/qdrant_client-1.12.1-py3-none-any.whl", hash = "sha256:b2d17ce18e9e767471368380dd3bbc4a0e3a0e2061fedc9af3542084b48451e0", size = 267171 },
 ]
+
+[[package]]
+name = "recipe-generator"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "crewai", extra = ["tools"] },
+]
+
+[package.metadata]
+requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.86.0,<1.0.0" }]
 
 [[package]]
 name = "referencing"

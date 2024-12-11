@@ -1,0 +1,20 @@
+[project]
+name = "my_recipe"
+version = "0.1.0"
+description = "my_recipe using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+my_recipe = "my_recipe.main:run"
+run_crew = "my_recipe.main:run"
+train = "my_recipe.main:train"
+replay = "my_recipe.main:replay"
+test = "my_recipe.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
